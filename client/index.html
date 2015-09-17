@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FinalApp">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Angular - AngularUI-Router-->
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <!--Bootstrap-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <!--Custom Css-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/resultado.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/lost_pass.css">
+    <link rel="stylesheet" type="text/css" href="css/create_account.css">
+    
+    <!--Custom Js-->
+    <script type="text/javascript" src="js/configs/TpFinalConfig.js"></script>
+    <script type="text/javascript" src="js/controllers/HomeCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/ResultadoCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/LoginCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/LostPasswordCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/CreateAccountCtrl.js"></script>
+    <title>Index</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="myHeader">
+        <div class="row headerRow">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 headerCol">
+                <!--Nav Bar-->
+                <section class="navBarCont">
+                    <div class="row navBarRow">
+                        <div class="col-md-2">
+                            <img src="assets/img/icon.png" alt="">
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-7 navBarCol">
+                            <div class="btn-group menuContainer" role="group">
+                                <button type="button" class="btn btn-default menuItem" ui-sref="HomeState">Home</button>
+                                <button type="button" class="btn btn-default menuItem" ui-sref="ResultadoState">Resultado</button>
+                                <button type="button" class="btn btn-default menuItem" ui-sref="LoginState">Login</button>
+                                <button type="button" class="btn btn-default menuItem">Opcion 4</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-2  headerRowCol3"></div>
+        </div>
+    </header>
+
+    <!--Views-->
+    <div class="ViewContainer" ui-view></div>
+
+    <!--Footer-->
+    <footer class="myFooter">
+        <div class="row footerlRow">
+            <div class="col-md-2 "></div>
+            <div class="col-md-6 "></div>
+            <!--Footer Nav Bar-->
+            <div class="col-md-2  footerCol">
+                <div class="btn-group footerNavBar" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default footerMenuBtn">Left</button>
+                    <button type="button" class="btn btn-default footerMenuBtn">Middle</button>
+                    <button type="button" class="btn btn-default footerMenuBtn">Right</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/*-----Testing----*/
+
+.testCol {
+    border: 1px solid blue;
+    background-color: grey;
+}
+
+
+/*-----Login Form----*/
+.myLogin .loginMainRow .loginCol .loginSubRow .loginSubCol .formCont .form {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.myLogin .loginMainRow .loginCol .loginSubRow .loginSubCol .formCont .form .lostPasswordLink {
+    margin-top: 5px;
+}
+
+.myLogin .loginMainRow .loginCol .loginSubRow .loginSubCol .formCont .form .submitBtn {
+    margin-top: 5px;
+    color: #FFF;
+    background-color: #CBBEB5;
+    border-color: #79726C;
+}

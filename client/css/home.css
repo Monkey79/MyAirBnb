@@ -1,0 +1,26 @@
+/*-----Banner (Form Search)----*/
+.banner {
+	background-color: #FBF9F6;
+}
+
+.banner .banerRow .bannerCol .searchForm {
+    text-align: center;
+}
+
+.banner .banerRow .bannerCol .searchForm .myForm {
+    padding: 212px 212px;
+}
+
+/*----Thumbnail----*/
+.myThumbnail .thumbnailRow{
+	padding-top: 10px;
+	background-color: #FFF8EE;
+}
+
+.myThumbnail .thumbnailRow .thumbnailCol .row .thumbCont .thumbLink .thumbPrg {
+    padding: 10px 10px;
+}
+
+.myThumbnail .thumbnailRow .thumbnailCol .thumbnailSubRow .thumbSubRowCol .thumbnail {
+    text-align: center;
+}

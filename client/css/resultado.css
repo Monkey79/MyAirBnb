@@ -1,0 +1,33 @@
+/*-----SubMenu-----*/
+.subMenu {
+	background-color: #F6DCCF;
+}
+
+.subMenu .subMenuRow .subMenuCol .subMenuCont {
+    text-align: right;
+}
+
+/*-----Items------*/
+.items {
+	margin-top: 20px;
+}
+
+.items .item .itemsRow .itemLogo {
+	margin-top: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.items .item .itemsRow .itemLogo .thumbnail .logoImg {
+	width: 100%;
+	height: 100%;
+}
+
+.items .item .itemsRow .itemPrg {
+	margin-top: 5px;
+}
+
+.items .item .itemsRow .itemButton {
+	margin-top: 5px;
+    text-align: right;
+}

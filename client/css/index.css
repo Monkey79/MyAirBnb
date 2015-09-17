@@ -1,0 +1,35 @@
+/*-----Testing----*/
+.testCol {
+    border: 1px solid blue;
+    background-color: grey;
+}
+
+/*-----Header-----*/
+.myHeader {
+    background-color: #EEE3D3;
+}
+
+.myHeader .headerRow .headerCol .navBarCont .navBarRow .navBarCol {
+    text-align: right;
+}
+
+.myHeader .headerRow .headerCol .navBarCont .navBarRow .navBarCol .menuContainer {
+    padding-top: 10px;
+}
+
+.myHeader .headerRow .headerCol .navBarCont .navBarRow .navBarCol .menuContainer .menuItem {
+    margin-right: 12px;
+}
+
+/*-----Footer-----*/
+.myFooter {
+    background-color: #EEE3D3;
+}
+
+.myFooter .footerlRow .footerCol {
+    text-align: right;
+}
+
+.myFooter .footerlRow .footerCol .footerNavBar .footerMenuBtn {
+    margin: 5px 2px;
+}

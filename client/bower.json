@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "authors": [
+    "SkyMonkey79 <marianomartin79@gmail.com>"
+  ],
+  "description": "bower-json",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "MyAirBnb"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Monkey79/MyAirBnb.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}

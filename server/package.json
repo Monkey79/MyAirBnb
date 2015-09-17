@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "MyAirBnb",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.1.6",
+    "request": "^2.61.0",
+    "token-generator": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monkey79/MyAirBnb.git"
+  },
+  "author": "monkey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Monkey79/MyAirBnb/issues"
+  },
+  "homepage": "https://github.com/Monkey79/MyAirBnb#readme"
+}

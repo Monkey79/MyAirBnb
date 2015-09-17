@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+    <!--Login-->
+    <section class="myRecoverPass">
+        <div class="row recoverPassMainRow">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 recoverPassCol">
+                <div class="row recoverPassSubRow">
+                    <div class="col-md-6 recoverPassSubCol">
+                        <div class="container formCont">
+                            <form class="form-signin form" ng-submit="lostPassFormSubmitHnd()">
+                                <h2 class="form-signin-heading">Recuperar Contraseña</h2>
+                                <label for="inputEmail" class="sr-only">Email</label>
+                                <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email" ng-model="data.myEmail">
+                                <button class="btn btn-lg btn-block submitBtn" type="submit">Recuperar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+</body>
+
+</html>
