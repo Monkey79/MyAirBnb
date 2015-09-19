@@ -15,16 +15,17 @@
                 <div class="row loginSubRow">
                     <div class="col-md-6 loginSubCol">
                         <div class="container formCont">
-                            <form class="form-signin form">
+                            <form class="form-signin form" ng-submit="accountFormSubmHndl()">
                                 <h2 class="form-signin-heading">Registro</h2>
+                                <p>{{data.message}}</p>
                                 <label for="inputEmail" class="sr-only">Email address</label>
-                                <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email" ng-model='data.email'>
+                                <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email" ng-model="data.email">
                                 <br>
                                 <label for="inputPassword" class="sr-only">Password</label>
-                                <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
+                                <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password" ng-model="data.password">
                                 <br>
                                 <label for="inputPassword" class="sr-only">Confirm Password</label>
-                                <input id="inputPassword" class="form-control" placeholder="Confirm Password" required="" type="password">
+                                <input id="inputPassword" class="form-control" placeholder="Confirm Password" required="" type="password" ng-model="data.confPassword">
                                 <br>
                                 <button class="btn btn-lg btn-block submitBtn" type="submit">Registrarme</button>
                             </form>

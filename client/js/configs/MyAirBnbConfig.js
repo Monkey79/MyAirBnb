@@ -26,7 +26,7 @@ myModule.config(function($stateProvider, $urlRouterProvider) {
     });
 
     $stateProvider.state('CreateAccountState', {
-        url: "/CreateAccount/?email",
+        url: "/CreateAccount/?email&message",
         templateUrl: 'pages/create_account.html',
         controller: 'CreateAccountCtrl'
     });

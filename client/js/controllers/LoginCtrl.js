@@ -2,8 +2,9 @@ myModule.controller('LoginCtrl', function($scope, $state, $http) {
     console.log("==SOY LOGIN CONTROLLER==");
 
     $scope.data = {
-        myEmail: "",
-        myPassword: ""
+        myEmail: '',
+        myPassword: '',
+        message:'',
     }
 
     $scope.loginFormSubmitHndl = function() {
@@ -14,10 +15,12 @@ myModule.controller('LoginCtrl', function($scope, $state, $http) {
             function(resp) {
                 console.log("ANGULAR-OK [RESP-DATA]", resp.data);
             }
-        ).catch(function(e) {
-        	console.log("ANGULAR-ERROR [RESP-STATUS-TEXT]", e);
-        	$state.go('CreateAccountState',{email:$scope.data.myEmail});
-        	throw e;
+        ).catch(function(err) {
+        	console.log("ANGULAR-ERROR [RESP-STATUS-TEXT]", err.data.toString());
+            $scope.data.message = err.data.toString();
+            console.log("ENVIANDO A CREATE ESTO ", $scope.data.message);
+        	$state.go('CreateAccountState',{email:$scope.data.myEmail, message:$scope.data.message});
+            //throw err;
         });
     }
 });
